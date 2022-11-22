@@ -1,7 +1,7 @@
 :root {
     --text-color-secondary: #757575;
     --color-hover: #2196F3;
-    --tra: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --tra: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -203,6 +203,8 @@ a:focus {
     border-radius: 4px;
     border: none;
     cursor: pointer;
+
+    transition: background var(--tra);
 }
 
 .hero-button:hover,
@@ -347,12 +349,12 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     
 
-    transition: background-color var(--tra), 
-    fill var(--tra);
+    transition: background-color var(--tra);
 }
 
 .team-soc-icon {
     fill: #AFB1B8;
+    transition: fill var(--tra);
 }
 
 .team-soc-link:hover,
@@ -394,7 +396,11 @@ border-radius: 0px 0px 4px 4px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
-    /* transition: color var(--tra), fill var(--tra); */
+    transition: border var(--tra), color var(--tra);
+}
+
+.client-icon {
+    transition: fill var(--tra);
 }
 
 
@@ -524,7 +530,12 @@ border-radius: 0px 0px 4px 4px;
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
-    cursor: pointer;    
+    cursor: pointer;
+    
+    transition: background var(--tra),
+    color var(--tra),
+    border var(--tra),
+    box-shadow var(--tra);
 }
 
 .filter-button-projects:hover,
