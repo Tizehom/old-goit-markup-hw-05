@@ -277,6 +277,30 @@ h2 {
     margin-top: 50px;
 }
 
+.industry-box {
+    position: relative;
+}
+
+.industry-box-text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.industry-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .industry-list .industry-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -609,7 +633,7 @@ border-radius: 0px 0px 4px 4px;
     color: var(--text-color-secondary);
 }
 
-.project-card {
+.project-box {
     position: relative;
     overflow: hidden;
 }
