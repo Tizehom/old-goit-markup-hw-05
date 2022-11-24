@@ -59,7 +59,7 @@
 		<main>
 			<section class="hero-container">
 				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-				<button type="button" class="hero-button">Замовити послугу</button>
+				<button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
 			</section>
 
 			<section class="benefits">
@@ -365,29 +365,29 @@
 					<ul class="footer-soc-list">
 						<li class="footer-soc-item">
 							<a href="" class="footer-soc-link">
-								<svg class="footer-soc-icon">
-									<use href="./images/icons.svg#icon-instagram" width="20px" height="20px"></use>
+								<svg class="footer-soc-icon" width="20px" height="20px">
+									<use href="./images/icons.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="footer-soc-item">
 							<a href="" class="footer-soc-link">
-								<svg class="footer-soc-icon">
-									<use href="./images/icons.svg#icon-twitter" width="20px" height="20px"></use>
+								<svg class="footer-soc-icon" width="20px" height="20px">
+									<use href="./images/icons.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="footer-soc-item">
 							<a href="" class="footer-soc-link">
-								<svg class="footer-soc-icon">
-									<use href="./images/icons.svg#icon-facebook" width="20px" height="20px"></use>
+								<svg class="footer-soc-icon" width="20px" height="20px">
+									<use href="./images/icons.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="footer-soc-item">
-							<a href="" class="footer-soc-link">
+							<a href="" class="footer-soc-link" width="20px" height="20px">
 								<svg class="footer-soc-icon">
-									<use href="./images/icons.svg#icon-linkedin" width="20px" height="20px"></use>
+									<use href="./images/icons.svg#icon-linkedin"></use>
 								</svg>
 							</a>
 						</li>
@@ -395,5 +395,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal-btn-close" data-modal-close>
+					<svg class="modal-close-icon" width="18px" height="18px">
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
