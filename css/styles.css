@@ -709,6 +709,15 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: background-color var(--tra),
+    fill var(--tra);
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+    background-color: var(--color-hover);
+    fill: #ffffff;
 }
 
 .is-hidden {
